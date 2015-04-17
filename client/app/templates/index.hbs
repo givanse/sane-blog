@@ -1,10 +1,20 @@
 
+<nav>
+  {{link-to 'Home' 'index'}}
+</nav>
+
+<hr>
+
 <sidebar>
   <ul>
     {{#each post in model}}
       <li>
-        {{link-to post.title 'post' post}}
+        {{link-to post.title 'index.post' post}}
       </li>
     {{/each}}
   </ul>
 </sidebar>
+
+<article>
+  {{outlet}}
+</article>
