@@ -1,0 +1,10 @@
+
+<sidebar>
+  <ul>
+    {{#each post in model}}
+      <li>
+        {{link-to post.title 'post' post}}
+      </li>
+    {{/each}}
+  </ul>
+</sidebar>
